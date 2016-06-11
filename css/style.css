@@ -1,0 +1,27 @@
+
+body {
+	background-color: white;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+}
+
+.video-result{
+	min-height: 200px;
+	min-width: 750px;
+}
+
+.videoInfo {
+	padding-left: 345px;
+}
+
+.videoInfo a {
+	display: block;
+}
+
+.thumbnail {
+	float: left;
+}
