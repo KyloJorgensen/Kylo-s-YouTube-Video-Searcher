@@ -31,35 +31,14 @@ $(document).ready(function() {
 			thumbnail = {};
 
 		$.each(results, function(index, value) {
-			ul += '<li><div class="video-result"><div class="thumbnail"><img src=' + value.snippet.thumbnails.medium.url + ' alt=""></div><div class="videoInfo"><a href="https://www.youtube.com/watch?v=' + value.id.videoId + '">' + value.snippet.title + '</a><a href="https://www.youtube.com/channel/' + value.snippet.channelId +'">' + value.snippet.channelTitle + '</a><p>' + value.snippet.description + '</p></div></div></li>';
+			ul += '<li><div class="video-result"><div class="thumbnail"><a href="https://www.youtube.com/watch?v=' + value.id.videoId + '"><img src=' + value.snippet.thumbnails.medium.url + ' alt=' + value.snippet.title + '></a></div><div class="videoInfo"><a href="https://www.youtube.com/watch?v=' + value.id.videoId + '">' + value.snippet.title + '</a><a href="https://www.youtube.com/channel/' + value.snippet.channelId +'">' + value.snippet.channelTitle + '</a><p>' + value.snippet.description + '</p></div></div></li>';
 	videoTitle += '<p>' + value.Title + '</p>';
 			console.log(value.Title);
 		});
 
 		$('ul').empty().append(ul);
 	}
+	$('ul').on('click', 'img', function() {
 
+	});
 });
-
-
-// 'https://www.youtube.com/watch?v=' + videoId
-// 'https://www.youtube.com/channel/' + channelId
-// 	items:Array[5]
-// 		0:Object
-// 			id:Object
-// 				videoId:"VEfiBct-39w"
-// 			snippet:Object
-// 				channelId:"UC0gNKhFMg-bKyNNZ_MB3D9Q"
-// 				channelTitle:"Webs & Tiaras - Toy Monster Compilations"
-// 				description:"Frozen Elsa, Anna & Pink Spidergirl vs Maleficent! w/ Spiderman, Catwoman, Ariel Mermaid & Batman! Superheroes In Real Life by Webs & Tiaras :) Watch ..."
-// 				thumbnails:Object
-// 					default:Object
-// 						height: 90
-// 						url: "https://i.ytimg.com/vi/VEfiBct-39w/default.jpg"
-// 						width: 120
-// 					high:Object
-// 					medium:Object
-// 				title:"Frozen Elsa, Anna & Pink Spidergirl vs Maleficent! w/ Spiderman, Catwoman, Ariel Mermaid & Batman :)"
-
-
-// https://www.youtube.com/channel/
