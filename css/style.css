@@ -8,6 +8,10 @@ li {
 	list-style: none;
 }
 
+img {
+	max-height: 180px;
+}
+
 .video-result{
 	min-height: 200px;
 	min-width: 750px;
